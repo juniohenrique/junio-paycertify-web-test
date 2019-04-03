@@ -1,4 +1,4 @@
-![CircleCI](https://circleci.com/gh/kingno21/protractor.svg?style=shield&circle-token=:circle-token)
+[![CircleCI](https://circleci.com/gh/juniohenrique/junio-paycertify-web-test.svg?style=svg)](https://circleci.com/gh/juniohenrique/junio-paycertify-web-test)
 # Sample for Protractor.
 
 > CircleCI + Protractor + WebdriverManager
