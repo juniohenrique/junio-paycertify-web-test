@@ -10,10 +10,21 @@ describe('Pokemon App', function() {
     expect(browser.getTitle()).toContain('Pokémon Trainer Club | Pokemon.com');
   });
 
-  it('should have a title', async () => {
+  it('should have Bulbasaur', async () => {
     menuPage.visit();
-    menuPage.entrar();
-    expect(browser.getTitle()).toContain('Pokemon.com');
+    menuPage.setPokeName("Bulbasaur");
+    menuPage.buscar();
+    expect(menuPage.getBulbasaur.isPresent()).toBe(true);
+    expect(menuPage.getUrsaring.isPresent()).toBe(false);
+  });
+
+  it('should have Ursaring', async () => {
+    menuPage.visit();
+    menuPage.setPokeName("Ursaring");
+    menuPage.buscar();
+    expect(menuPage.getUrsaring.isPresent()).toBe(true);
+    expect(menuPage.getBulbasaur.isPresent()).toBe(false);
+
   });
 
 });
