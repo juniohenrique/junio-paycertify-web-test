@@ -20,12 +20,13 @@ exports.config = {
 	baseUrl: 'https://www.pokemon.com/us/pokedex/',
 	framework: 'jasmine',
 	jasmineNodeOpts: {
+		defaultTimeoutInterval: 250000,
 		showColors: true,
 		print: function () { }
 	},
 	onPrepare() {
 		browser. waitForAngularEnabled(false);
-		browser.manage().timeouts().implicitlyWait(5000);
+		browser.manage().timeouts().implicitlyWait(15000);
 		browser.driver.manage().window().setSize(1280, 1024);
 		jasmine.getEnv().addReporter(new SpecReporter({ spec: { displayStacktrace: true } }));
 	}
