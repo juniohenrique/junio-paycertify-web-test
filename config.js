@@ -5,7 +5,7 @@ const { SpecReporter } = require('jasmine-spec-reporter');
 
 exports.config = {
 	specs: [
-		'./spec/*.spec.js'
+		'./spec/*_spec.js'
 	],
 	multiCapabilities: [
 		{
