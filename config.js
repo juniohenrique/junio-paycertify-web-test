@@ -11,13 +11,13 @@ exports.config = {
 		{
 			'browserName': 'chrome',
 			'chromeOptions': {
-				args: [ "--headless", "--disable-gpu"]
+				args: [ "--disable-gpu"]
 			}
 		}
 	],
 	directConnect: true,
 	seleniumAddress: 'http://localhost:4444/wd/hub',
-	baseUrl: 'https://www.pokemon.com/us/pokedex/',
+	baseUrl: 'https://www.pokemon.com/br/pokedex/',
 	framework: 'jasmine',
 	jasmineNodeOpts: {
 		showColors: true,

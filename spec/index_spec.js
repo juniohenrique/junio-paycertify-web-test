@@ -1,8 +1,19 @@
-describe('Protractor Demo App', function() {
-  it('should have a title', function() {
-    browser.ignoreSynchronization = true;
-    browser.get('https://www.google.com.br');
+var MenuPage = require('../pages/menu.po')
 
-    expect(browser.getTitle()).toEqual('Google');
+describe('Pokemon App', function() {
+
+  var menuPage = new MenuPage();
+
+  it('should have a Clube', async () => {
+    menuPage.visit();
+    menuPage.entrar();
+    expect(browser.getTitle()).toContain('Clube de Treinadores Pokémon | Pokemon.br');
   });
+
+  it('should have a title', async () => {
+    menuPage.visit();
+    menuPage.entrar();
+    expect(browser.getTitle()).toContain('Pokemon.com');
+  });
+
 });
