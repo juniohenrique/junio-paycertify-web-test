@@ -28,6 +28,9 @@ jobs:
     steps:
       - checkout
       - run:
+          name: Install
+          command: yarn install
+      - run:
           name: Selenium
           command: |
             yarn run webdriver:update
