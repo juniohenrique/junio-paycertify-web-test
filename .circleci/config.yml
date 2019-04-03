@@ -30,13 +30,14 @@ jobs:
       - run:
         name: Selenium
         command: |
-            yarn run webdriver:update
+          yarn run webdriver:update
+          
       - run:
-          name: Selenium
-          command: |
-            yarn run webdriver:start
-          background: true
-
+        name: Selenium
+        command: |
+          yarn run webdriver:start
+        background: true
+        
       - run: |
           sleep 2
           yarn test
