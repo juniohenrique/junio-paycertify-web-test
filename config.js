@@ -17,7 +17,7 @@ exports.config = {
 	],
 	directConnect: true,
 	seleniumAddress: 'http://localhost:4444/wd/hub',
-	baseUrl: 'https://www.pokemon.com/br/pokedex/',
+	baseUrl: 'https://www.pokemon.com/us',
 	framework: 'jasmine',
 	jasmineNodeOpts: {
 		showColors: true,

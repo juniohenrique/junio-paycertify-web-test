@@ -7,7 +7,7 @@ describe('Pokemon App', function() {
   it('should have a Clube', async () => {
     menuPage.visit();
     menuPage.entrar();
-    expect(browser.getTitle()).toContain('Clube de Treinadores Pokémon | Pokemon.br');
+    expect(browser.getTitle()).toContain('Pokémon Trainer Club | Pokemon.com');
   });
 
   it('should have a title', async () => {

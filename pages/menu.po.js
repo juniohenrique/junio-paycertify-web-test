@@ -4,7 +4,7 @@ var  MenuPage = function() {
     };
 
     MenuPage.prototype.visit = function (){
-        browser.get('/');
+        browser.get('/pokedex/');
     };
 
     MenuPage.prototype.entrar = function (){
